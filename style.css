@@ -1,6 +1,170 @@
+/** @format */
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  background-color: #2E5866;
+
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.title {
+  margin: 15px;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #69CAEA;
+  text-align: center;
+}
+
+.underline {
+  width: 100px;
+  height: 4px;
+  margin-bottom: 20px;
+  background-color: #26afdd;
+}
+
+.review {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 60vw;
+  max-width: 550px;
+  margin: auto 0 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow:
+  12px 19px 5px rgba(0, 0, 0, 0.111);
+}
+
+.review__img {
+  display: block;
+  margin-top: 50px;
+  width: 200px;
+  height:200px;
+  margin-bottom: -50px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center;
+  box-shadow: 9px -4px 0 3px #ADD8E6;
+}
+
+.review__quote {
+  position: relative;
+  bottom: 140px;
+  right: 38%;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  background-color: #ADD8E6;
+  fill: #fff;
+  border-radius: 50%;
+}
+
+@media (max-width:768px)  {
+
+  .review {
+    min-width: 300px;
+  }
+
+  .review__img {
+    width: 150px;
+    height: 150px;
+  }
+  .review__quote {
+    bottom:100px;
+    right: 44%;
+    width: 22px;
+    height: 22px;
+  }
+}
+@media (max-width:509px)  {
+  .review__img {
+    margin-bottom: -32px;
+    box-shadow: 7px -2px 0 2px #ADD8E6;
+  }
+
+}
+
+
+.name {
+  margin: 10px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #2E5866;
+}
+
+.job {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 0;
+  color: lightblue;
+}
+
+.info {
+  max-width: 450px;
+  padding: 20px;
+  font-size: 1rem;
+  color: #444;
+}
+
+.btns {
+  display: block;
+}
+
+.btn {
+  width: 30px;
+  height: auto;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color .4s;
+}
+
+.btn:hover {
+  background-color: lightblue;
+}
+
+.btn--random {
+  width: auto;
+  height: auto;
+  margin: 20px 0;
+  padding: 4px 9px;
+  font-size: 1.1rem;
+  color: lightblue;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #2E5866;
+  border: 3px solid;
+  border-radius: 6px;
+}
+
+.btn:active,
+.btn--random:active {
+  transform: scale(0.98);
+}
+
+.anime {
+  animation: anime .6s alternate-reverse;
+}
+
+@keyframes anime {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-20px);
+  }
 }
